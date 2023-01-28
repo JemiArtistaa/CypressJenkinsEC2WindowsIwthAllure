@@ -9,7 +9,7 @@ describe('verify shopist domain',()=>{
         cy.viewport (1366,768)
     })
 
-    it('title check',()=>{
+    it('title check, <regression> <smoke>',()=>{
         
         cy.visit('https://shopist.io/')
         HeaderPage.element.chairs().click().wait(200)
@@ -27,14 +27,14 @@ describe('verify shopist domain',()=>{
 
     })
 
-    it('Verify add to cart functionality one',()=>{
+    it('Verify add to cart functionality one,<regression><sanity>',()=>{
         
         cy.visit('https://shopist.io/')
         cy.addProductTocart('Wooden Stools').wait(500)
         cy.verifyCartAdded()
     })
 
-    it('verify Cart functionality two',()=>{
+    it('verify Cart functionality two,<regression><smoke>',()=>{
 
 
         cy.visit('https://shopist.io/')
@@ -44,7 +44,7 @@ describe('verify shopist domain',()=>{
 
     })
 
-    it('verify cart functionality three',()=>{
+    it('verify cart functionality three,<regression><sanity>',()=>{
 
         cy.visit('https://shopist.io')
         FooterPage.elements.chairs().click()

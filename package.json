@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "cy:run": "npx cypress run",
-    "test": "npx cypress run --config video=false --env allure=true --spec cypress/e2e/PomExampleOne.cy.js",
+    "test": "npx cypress run --config video=false --env allure=true",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
     "firefox": "cypress run --browser firefox"

@@ -6,6 +6,7 @@ describe('verify oraange domian', () => {
   let userName = 'Admin'
   let passWord = "admin123"
   let buttonName ='Login'
+  
   beforeEach(()=>{
     cy.session([userName,passWord,buttonName],()=>{
       cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')

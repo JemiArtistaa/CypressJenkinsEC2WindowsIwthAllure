@@ -3,13 +3,13 @@
 import HeaderPage from '../Pages/HeaderPage'
 import FooterPage from '../Pages/FooterPage'
 
-describe('',()=>{
+describe('verify shopist domain',()=>{
 
     beforeEach(()=>{
         cy.viewport (1366,768)
     })
 
-    it('test one',()=>{
+    it('title check',()=>{
         
         cy.visit('https://shopist.io/')
         HeaderPage.element.chairs().click().wait(200)
@@ -27,14 +27,14 @@ describe('',()=>{
 
     })
 
-    it('Verify add to cart functionality',()=>{
+    it('Verify add to cart functionality one',()=>{
         
         cy.visit('https://shopist.io/')
         cy.addProductTocart('Wooden Stools').wait(500)
         cy.verifyCartAdded()
     })
 
-    it.only('verify Cart functionality',()=>{
+    it.only('verify Cart functionality two',()=>{
 
 
         cy.visit('https://shopist.io/')
@@ -44,7 +44,7 @@ describe('',()=>{
 
     })
 
-    it('test Three',()=>{
+    it('verify cart functionality three',()=>{
 
         cy.visit('https://shopist.io')
         FooterPage.elements.chairs().click()

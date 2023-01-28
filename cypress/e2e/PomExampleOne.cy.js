@@ -34,7 +34,7 @@ describe('verify shopist domain',()=>{
         cy.verifyCartAdded()
     })
 
-    it.only('verify Cart functionality two',()=>{
+    it('verify Cart functionality two',()=>{
 
 
         cy.visit('https://shopist.io/')

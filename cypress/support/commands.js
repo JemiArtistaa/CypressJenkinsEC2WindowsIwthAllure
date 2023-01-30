@@ -1,7 +1,6 @@
 /// <reference types="cypress"/>
 
-import HeaderPage from '../pages/HeaderPage'
-import FooterPage from '../Pages/FooterPage'
+import HeaderPage from '../pages/HeaderPage.js'
 
 Cypress.Commands.add('clickButton',(buttonName)=>{
     cy.get('button').contains(buttonName).click({force:true}).wait(2000)

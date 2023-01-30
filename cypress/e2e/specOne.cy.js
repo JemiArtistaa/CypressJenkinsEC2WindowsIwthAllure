@@ -15,7 +15,7 @@ describe('verify oraange domian', () => {
   })
 
 
-  it('Search By Name <smoke>',()=>{
+  it('Search By Name <regression><smoke>',()=>{
 
     let search = 'Odis'
     let selectedEmp = 'Adalwin'
@@ -27,7 +27,7 @@ describe('verify oraange domian', () => {
 
   })
 
-  it('Search By Job-title <sanity>',()=>{
+  it('Search By Job-title <regression><sanity>',()=>{
 
     let jobTitle = 'Software Engineer'
 

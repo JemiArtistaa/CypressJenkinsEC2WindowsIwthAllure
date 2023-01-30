@@ -1,7 +1,8 @@
 /// <reference types="cypress"/>
 
-import {HeaderPage} from '../Pages/FooterPage'
-import {FooterPage} from '../Pages/FooterPage'
+import HeaderPage from '../Pages/FooterPage'
+import FooterPage from '../Pages/FooterPage'
+
 
 describe('verify shopist domain',()=>{
 

@@ -10,7 +10,7 @@ describe('verify shopist domain',()=>{
         cy.viewport (1366,768)
     })
 
-    it('title check, <regression> <smoke>',()=>{
+    it('title check, <regression><smoke>',()=>{
         
         cy.visit('https://shopist.io/')
         HeaderPage.element.chairs().click().wait(200)

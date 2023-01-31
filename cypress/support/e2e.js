@@ -17,6 +17,7 @@
 import './commands';
 import registerCypressGrep from '@cypress/grep/src/support';
 import '@shelex/cypress-allure-plugin';
+import 'cypress-mochawesome-reporter/register';
 registerCypressGrep();
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

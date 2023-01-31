@@ -6,17 +6,17 @@
   "scripts": {
     "cy:run": "npx cypress run",
     "regression:electron": "npx cypress run --config video=false --env allure=true,grep=regression --browser electron ",
-    "smoke:electron":"npx cypress run --config video=false --env allure=true,grep=smoke --browser electron",
-    "sanity:electron":"npx cypress run --config video=false --env allure=true,grep=sanity --browser electron",
+    "smoke:electron": "npx cypress run --config video=false --env allure=true,grep=smoke --browser electron",
+    "sanity:electron": "npx cypress run --config video=false --env allure=true,grep=sanity --browser electron",
     "regression:chrome": "npx cypress run --config video=false --env allure=true,grep=regression --browser chrome ",
-    "smoke:chrome":"npx cypress run --config video=false --env allure=true,grep=smoke --browser chrome",
-    "sanity:chrome":"npx cypress run --config video=false --env allure=true,grep=sanity --browser chrome",
+    "smoke:chrome": "npx cypress run --config video=false --env allure=true,grep=smoke --browser chrome",
+    "sanity:chrome": "npx cypress run --config video=false --env allure=true,grep=sanity --browser chrome",
     "regression:firefox": "npx cypress run --config video=false --env allure=true,grep=regression --browser firefox ",
-    "smoke:firefox":"npx cypress run --config video=false --env allure=true,grep=smoke --browser firefox",
-    "sanity:firefox":"npx cypress run --config video=false --env allure=true,grep=sanity --browser firefox",
+    "smoke:firefox": "npx cypress run --config video=false --env allure=true,grep=smoke --browser firefox",
+    "sanity:firefox": "npx cypress run --config video=false --env allure=true,grep=sanity --browser firefox",
     "regression:edge": "npx cypress run --config video=false --env allure=true,grep=regression --browser edge ",
-    "smoke:edge":"npx cypress run --config video=false --env allure=true,grep=smoke --browser edge",
-    "sanity:edge":"npx cypress run --config video=false --env allure=true,grep=sanity --browser edge",
+    "smoke:edge": "npx cypress run --config video=false --env allure=true,grep=smoke --browser edge",
+    "sanity:edge": "npx cypress run --config video=false --env allure=true,grep=sanity --browser edge",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
     "firefox": "cypress run --browser firefox",
@@ -27,6 +27,7 @@
   "devDependencies": {
     "@cypress/grep": "^3.1.3",
     "@shelex/cypress-allure-plugin": "^2.34.0",
-    "cypress": "^12.3.0"
+    "cypress": "^12.3.0",
+    "cypress-mochawesome-reporter": "^3.2.3"
   }
 }

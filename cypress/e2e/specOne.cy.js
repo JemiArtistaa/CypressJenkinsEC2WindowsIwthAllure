@@ -17,8 +17,8 @@ describe('verify oraange domian', () => {
 
   it('Search By Name <regression><smoke>',()=>{
 
-    let search = 'fa'
-    let selectedEmp = 'farter'
+    let search = 'Ca'
+    let selectedEmp = 'Carter'
     cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index')
     cy.clickMenuItem('Directory')
     cy.selectEmployee(search,selectedEmp)

@@ -39,7 +39,7 @@ describe('verify oraange domian', () => {
 
   })
 
-  it.only('Search By Location <regression>',()=>{
+  it('Search By Location <regression>',()=>{
 
     let location = 'Texas'
 

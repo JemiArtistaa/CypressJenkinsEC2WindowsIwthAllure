@@ -1,6 +1,6 @@
 class FooterPage{
 
-    elements ={
+    element ={
 
         chairs :()=> cy.get('.caps').contains('Chairs')
 
@@ -9,4 +9,4 @@ class FooterPage{
 
 }
 
-module.exports = new FooterPage();
+module.exports =  new FooterPage();

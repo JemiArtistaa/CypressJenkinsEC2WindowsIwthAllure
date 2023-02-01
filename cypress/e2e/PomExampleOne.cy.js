@@ -1,7 +1,9 @@
 /// <reference types="cypress"/>
 
-import HeaderPage from '../Pages/FooterPage'
-import FooterPage from '../Pages/FooterPage'
+// import HeaderPage from '../Pages/FooterPage'
+// import FooterPage from '../Pages/FooterPage'
+const HeaderPage = require('../Pages/HeaderPage')
+const FooterPage = require('../Pages/FooterPage')
 
 
 describe('verify shopist domain',()=>{
@@ -13,7 +15,7 @@ describe('verify shopist domain',()=>{
     it('title check,<regression><smoke>',()=>{
         
         cy.visit('https://shopist.io/')
-        HeaderPage.element.chairs().click().wait(200)
+        HeaderPage.element.chairs().click().wait(1000)
 
         cy.get('.products .product-card-container').as ('products')
         cy.get('@products').find('.description >div:nth-child(1)').as ('productname')
@@ -37,7 +39,6 @@ describe('verify shopist domain',()=>{
 
     it('verify Cart functionality two,<regression><smoke>',()=>{
 
-
         cy.visit('https://shopist.io/')
         cy.addProductTocart('Wooden Stools')
         cy.verifyCartAdded()
@@ -48,7 +49,7 @@ describe('verify shopist domain',()=>{
     it('verify cart functionality three,<regression><sanity>',()=>{
 
         cy.visit('https://shopist.io')
-        FooterPage.elements.chairs().click()
+        FooterPage.element.chairs().click()
         cy.url().should('include','/chairs')
     })
 

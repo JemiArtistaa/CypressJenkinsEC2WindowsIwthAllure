@@ -1,5 +1,7 @@
 /// <reference types="cypress"/>
 
+// const HeaderPage = require('../Pages/HeaderPage')
+// const FooterPage = require('../Pages/FooterPage')
 import HeaderPage from '../Pages/FooterPage'
 import FooterPage from '../Pages/FooterPage'
 
@@ -69,7 +71,7 @@ Cypress.Commands.add('verifyLocation',(loc)=>{
 })
 
 Cypress.Commands.add('addProductTocart',(nameOfproduct)=>{
-
+    // const headerpage  = new HeaderPage()
     HeaderPage.element.chairs().click()
     cy.get('.products .product-card-container').as ('products')
     cy.get('@products').find('.description >div:nth-child(1)').as ('productname')
@@ -93,5 +95,9 @@ Cypress.Commands.add('verifyTitleInCart',((nameOfProduct)=>{
     
     cy.get('.cart').click().wait(500)
     cy.get('.cart .product-description > div:nth-child(1)').should('contain.text',nameOfProduct)
+}))
+
+Cypress.Commands.add('logout',()=>{
+    cy.get('.oxd-userdropdown-name').click().wait(500)
+    cy.contains('Logout').click()
 })
-)

@@ -12,7 +12,7 @@ module.exports = defineConfig({
       return config;
     }
   },
-  numTestsKeptInMemory =0,
+  numTestsKeptInMemory : 0
   // env: {
   //   "grep" : "regression",
   //   "browser" : "firefox",
